@@ -18,12 +18,12 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 
-const corsOptions = {
-    origin:true,
-    credentials:true,
-}
+// const corsOptions = {
+//     origin:true,
+//     credentials:true,
+// }
 // http://localhost:5173/signup
-app.use(cors(corsOptions))
+app.use(cors())
 
 
 const PORT = process.env.PORT || 3000
